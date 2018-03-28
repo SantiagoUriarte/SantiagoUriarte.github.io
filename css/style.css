@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.landing {
+    width: 100%;
+    height: 100%;
+}
+
+nav.nav-center {
+    text-align: center;
+}
+
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+
+nav.nav-center ul li a {
+    color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 180%;
+    display: inline-block;
+}
+
+
+.landing-content {
+    margin-left: 1.3%;
+    margin-top: 8%;
+    font-family: 'Calibri Light';
+}
+
+.landing-content h1 {
+
+    
+    font-size: 71px;
+
+}
+
+.landing-content h2 {
+
+    
+    font-size: 61px;
+
+}
+
+.landing-action {
+    margin-top: 5%;
+}
