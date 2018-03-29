@@ -41,20 +41,30 @@ nav.nav-center ul li a {
 .landing-content h1 {
 
     
-    font-size:calc(10px + 4.5vw);
+    font-size:calc(10px + 4vw);
 
 }
 
 .landing-content h2 {
 
     
-    font-size:calc(10px + 3.5vw);
+    font-size:calc(10px + 3vw);
 
 }
 
 .landing-action {
-    margin-right: 3%;
+    margin-right: 4%;
     margin-top: 5%;
+}
+
+.landing-action .hide-on-med-and-up {
+  margin: 0;
+}
+
+.landing-action .btn {
+  padding: 30px 80px 30px 80px;
+  line-height: 10%;
+  
 }
 
 .btn {
