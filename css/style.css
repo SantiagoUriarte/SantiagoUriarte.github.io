@@ -15,7 +15,6 @@ body {
 }
 
 nav.nav-center {
-    margin-left: -1%;
     text-align: center;
 }
 
@@ -25,7 +24,6 @@ nav.nav-center ul li {
 }
 
 nav.nav-center ul li a {
-    padding-left: 3%;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size:calc(12px + 1vw);
@@ -53,7 +51,6 @@ nav.nav-center ul li a {
 }
 
 .landing-action {
-    margin-right: 4%;
     margin-top: 5%;
 }
 
