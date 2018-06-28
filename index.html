@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-     <link rel="stylesheet" href="css/style.css">
-
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <title>Welcome</title>
+    <!--BULMDA CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!--Animate.css -->
+    <link rel="stylesheet" href="animate.css">
+    <!--LOCAL CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--LOCAL JAVASCRTIPT-->
+    <script src="script.js"></script>
 </head>
 
-    <body>
-
-        <!-- LANDING PAGE -->
-        <div class="landing">
-
-            <!-- NAVBAR -->
-           <nav class="nav-center white z-depth-0 animated fadeIn">
-
-                    <ul>
-                        <li><a href="#" style="color: #2196f3">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                
-           </nav>
-
-           <!-- LANDING CONTENT -->
-           <section class="landing-content">
-
-               <div class="row">
-                   <div class="col s12 animated fadeInUp" style="margin-top: 40px;"><h1 class="center-align">Hi I'm Santiago Uriarte</h1></div>
-                   <div class="hide-on-med-and-down col s12 animated fadeInUp" style="margin-top: -40px"><h5 class="center-align"><div style="width: 40%; border: 2px solid #2196f3; border-radius: 30px; display: inline-block;"></div></h5></div>
-                   <div class="hide-on-small-only hide-on-large-only col s12 animated fadeInUp" style="margin-top: -40px"><h5 class="center-align"><div style="width: 40%; border: 2px solid #2196f3; border-radius: 30px; display: inline-block;"></div></h5></div>
-                   <div class="hide-on-med-and-up col s12 animated fadeInUp" style="margin-top: -40px"><h5 class="center-align"><div style="width: 50%; border: 1px solid #2196f3; border-radius: 30px; display: inline-block;"></div></h5></div>
-                   <div class="col s12 animated fadeInUp" style="margin-top: -35px"><h2 class="center-align">I like to build things.</h2></div>
-              </div>
-
-           </section>
-
-           <!-- CALL TO ACTION -->
-           <h1 class="hide-on-med-and-up center-align landing-action animated fadeIn" style="margin-top: 20%;"><a href="#" class="btn btn-small blue waves-effect waves-light">explore</a></h1>
-           <h1 class="hide-on-small-only center-align landing-action animated fadeIn"><a href="#" class="btn btn-large blue waves-effect waves-light">explore</a></h1>
-
-          
-        
+<body>
+    <!--TITLE-->
+    <div id="main-banner" class="hero is-large main-banner animated fadeInDown">
+       <div class="animated-long fadeIn">
+        <div class="logo">
+           <a href="#main-banner"><h1 class="subtitle"><span class="highlight">SU</span>&nbspPortfolio</h1></a>
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Hi I'm Santiago Uriarte</h1>
+                <h2 class="subtitle">I like to build Apps and create Machine Learning Models</h2>
+            </div>
         </div>
 
-        
-        
-    </body>
+        <div class="explore is-vertical-centered">
+            <a href="#column1" class="button">Explore</a>
+        </div>
+        </div>
+    </div>
+
+    <!--START OF PROJECTS-->
+
+    <div id="column1" class="columns">
+        <a class="column is-5 project project1 animated fadeInLeft">
+            <h1 class="title">Portfolio Website</h1>
+            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi accusamus ipsum nihil a quos deserunt autem, unde reprehenderit quis natus, eos itaque consequuntur minima adipisci alias laboriosam laborum suscipit. Autem!</h2>
+        </a>
+        <a class="column is-7 project project2 animated fadeInRight">
+            <h1 class="title">UCI Hackathon Investment Prediction App</h1>
+            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam earum voluptas officia. Suscipit commodi eum, tempore fugit repellat in sequi saepe laboriosam? Fugiat sint veniam quod pariatur, illo distinctio quibusdam.</h2>
+        </a>
+    </div>
+    <div class="columns" style="margin-bottom: 0">
+        <a class="column is-7 project project3">
+            <h1 class="title">Flower Image Classifier</h1>
+            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa blanditiis quos velit nihil soluta deserunt laborum placeat quisquam earum nulla totam eius sequi cupiditate, reiciendis optio aspernatur temporibus in eaque.</h2>
+        </a>
+        <a class="column is-5 project project4">
+            <h1 class="title">Othello</h1>
+            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, atque. Nulla beatae architecto odio porro delectus officia aspernatur dolore praesentium unde ullam itaque laudantium, sunt explicabo distinctio blanditiis amet quam.</h2>
+        </a>
+    </div>
+    <!--START OF FOOTER-->
+    <div class="footer">
+        <div class="footer-content is-vertical-centered">
+            <textarea id="email" cols="30" rows="10">b.santiagoU@gmail.com</textarea>
+            <a style="margin: 0;" onclick="copyEmail()"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/SantiagoUriarte"><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-cc-paypal"></i></a>
+        </div>
+
+        <h1 class="title is-vertical-centered">Created by Santiago Uriarte</h1>
+        <h1 class="subtitle is-vertical-centered">Phone: 1626-373-5979 | Hours: 12pm - 8pm</h1>
+    </div>
+</body>
 
 </html>
