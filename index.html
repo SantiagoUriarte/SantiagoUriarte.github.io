@@ -54,34 +54,81 @@
     <div id="column1" class="columns">
         <a class="column is-5 project project1 animated fadeInLeft">
             <h1 class="title">Portfolio Website</h1>
-            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi accusamus ipsum nihil a quos deserunt autem, unde reprehenderit quis natus, eos itaque consequuntur minima adipisci alias laboriosam laborum suscipit. Autem!</h2>
+            <h2 class="subtitle">
+                    I created this website to put my skills to the test and to show off my work! This was written in HTML5, CSS3, and Javascript. For the Web Design, 
+                    I used the BULMA framework because their no Javascript components proved to be very fast and lightweight. 
+                    I added a few custom CSS classes, namely for the project's grid to complete my minimalist aesthetic. 
+                    I used javascript to add extra functionality to the site. 
+                    I added an animation to the explore button which would smoothly scroll and link to a page anchor. 
+                    And then I added email functionality which both hid my email(from spammers) but allowed real users to click the icon and have my email copied to their clipboard. 
+                    <br>
+                    <br>               
+                    The site is still a huge work in progress but I am proud of what I have made so far, and I am excited to continue learning and improving myself. 
+
+            </h2>
         </a>
         <a class="column is-7 project project2 animated fadeInRight">
             <h1 class="title">UCI Hackathon Investment Prediction App</h1>
-            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam earum voluptas officia. Suscipit commodi eum, tempore fugit repellat in sequi saepe laboriosam? Fugiat sint veniam quod pariatur, illo distinctio quibusdam.</h2>
+            <h2 class="subtitle">
+                    For UCI Hackathon 2017, I, along with some of my friends, created an investment app that utilized machine learning and natural language sentiment to determine the 
+                    viability of investing in a certain stock. This app was created in Ruby, HTML, CSS, and Javascript. The app first utilized the Nokogiri Ruby gem to web scrape 
+                    Seeking Alpha(A stock information website). It would search for recent articles on an inputted stock, for example, AAPL(Apple). We would then use Google's 
+                    Natural Language API to perform sentiment analysis on the various articles. Sentiment analysis would determine if the outlook of the stocks were good or bad 
+                    which allowed us to determine investment viability. Finally, the front end and extra functionality of the web app utilized HTML, CSS, and Javascript.
+                    <br>
+                    <br>
+                    While our algorithm isn't perfect and we didn't have much time to test our app, we, especially me, am very proud that we were able to create this app in 2 days. 
+                    I learned a lot about Machine Learning, Sentiment Analysis, and Web Scraping. Overall, the time spent on this project was very valuable and I would love to 
+                    continue working on projects like this. 
+            </h2>
         </a>
     </div>
     <div class="columns" style="margin-bottom: 0">
         <a class="column is-7 project project3">
-            <h1 class="title">Flower Image Classifier</h1>
-            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa blanditiis quos velit nihil soluta deserunt laborum placeat quisquam earum nulla totam eius sequi cupiditate, reiciendis optio aspernatur temporibus in eaque.</h2>
+            <h1 class="title">Multifeature Linear Regression Model</h1>
+            <h2 class="subtitle">
+                    Over the summer, I self-studied and took various courses on Machine Learning. My first and most refined model is a Multifeautre Linear Regression Model. 
+                    This model was written in Python from scratch. I did not use machine learning libraries such as TensorFlow or SciKitLearn because I wanted to be sure 
+                    I understood the theoretical and mathematical implications of what I learned to see if I really knew what I was doing. What this model does is take 
+                    multiple inputs(features) and predicts outputs based on the initial training data. For example, if I gave the model training data with inputs such as 
+                    house size, house height, and house year, along with an output of those inputs such as final house price; The model will analyze the data and create a 
+                    hypothesis or prediction model that will be able to estimate an output(such as house price) from new inputs not found in original training set. I also 
+                    implemented feature scaling to speed up the runtime of the model. 
+                    <br>
+                    <br> 
+                    Creating this model was extremely fun and it let me apply my theoretical knowledge I've gained in classes such as Linear Algebra and Calculus. 
+                    Machine Learning is such an interesting field for me and I love seeing how different models work as well as the theory behind them. I hope to 
+                    continue my studies in Machine Learning and continue to grow and improve.
+            </h2>
         </a>
         <a class="column is-5 project project4">
             <h1 class="title">Othello</h1>
-            <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, atque. Nulla beatae architecto odio porro delectus officia aspernatur dolore praesentium unde ullam itaque laudantium, sunt explicabo distinctio blanditiis amet quam.</h2>
+            <h2 class="subtitle">
+                    Othello is a popular and classic board game that I turned into a desktop app. The game was written entirely in Python and I even created a GUI for it using Tkinter. 
+                    This project was one of the most challenging and laborious programs I've created and making it has given me a whole new insight and respect for game developers. 
+                    I created the algorithms from my Othello games from scratch and I had to find algorithms to Determine the winner, check corner cases, check if possible moves were 
+                    available and to check which pieces need to be flipped and how it affects other pieces on the board. Thinking and creating these algorithms made me apply theoretical 
+                    Computer Science and Logical Knowledge to create efficient algorithms that wouldn't slow down the flow of the game. Additionally, I created an entire GUI for 
+                    it using Tkinter. I designed every part such as drawing the shapes, updating scores and times as well as other background processes that happen in video games 
+                    that I've always taken for granted. 
+                    <br>
+                    <br> 
+                    But while this process was challenging, I enjoyed it and felt immensely proud of what I've created. Othello is a simple game but so much had to be done 
+                    to just make it work and look pretty. This gave me a newfound respect for developers who create even more complex video 
+                    game and developers who create frameworks and engines from scratch so that others may create video games.    
+            </h2>
         </a>
     </div>
     <!--START OF FOOTER-->
     <div class="footer">
+        <textarea id="email" cols="20" rows="1">b.santiagoU@gmail.com</textarea>
         <div class="footer-content is-vertical-centered">
-            <textarea id="email" cols="30" rows="10">b.santiagoU@gmail.com</textarea>
             <a style="margin: 0;" onclick="copyEmail()"><i class="fas fa-envelope"></i></a>
             <a href="https://github.com/SantiagoUriarte"><i class="fab fa-github"></i></a>
             <a href=""><i class="fab fa-cc-paypal"></i></a>
         </div>
 
         <h1 class="title is-vertical-centered">Created by Santiago Uriarte</h1>
-        <h1 class="subtitle is-vertical-centered">Phone: 1626-373-5979 | Hours: 12pm - 8pm</h1>
     </div>
 </body>
 
