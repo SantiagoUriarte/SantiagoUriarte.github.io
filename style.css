@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+textarea {
+   display: none;
+}
+
 .highlight {
     text-align: center;
     padding: 4px 6px;
@@ -40,6 +44,21 @@ a {
     color: white;
 }
 
+.more-details {
+    color: rgb(51, 61, 67);
+}
+
+.project:hover {
+    color: white;
+}
+
+.modal-content {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.modal-content .title {
+    color: rgba(50,115,220, 0.8);
+}
 /*HELPER STYLE END*/
 
 /*MAIN BANNER STYLE START*/
@@ -131,9 +150,17 @@ a {
     
     .project .subtitle {
         color: rgba(255, 255, 255, .9);
-        ;
         margin-top: 10px;
         font-size: 10px;
+    }
+
+    .modal .modal-content {
+        overflow: auto;
+        font-size: 10px;
+    }
+
+    .modal .modal-content .title {
+        font-size: 15px;
     }
 
     .footer .footer-content {
@@ -239,6 +266,7 @@ a {
         ;
         font-size: 25px;
     }
+
     
     .project .subtitle {
         color: rgba(255, 255, 255, .9);
@@ -246,6 +274,16 @@ a {
         margin-top: 10px;
         font-size: 15px;
     }
+    
+    .modal .modal-content {
+        overflow: auto;
+        font-size: 17px;
+    }
+
+    .modal .modal-content .title {
+        font-size: 25px;
+    }
+
 
     .footer .footer-content {
         color: rgba(255, 255, 255, .9);
@@ -336,7 +374,7 @@ a {
     }
 
     .project {
-        padding: 300px 100px 300px 100px;
+        padding: 200px 100px 200px 100px;
     }
 
     .project .title {
@@ -354,6 +392,12 @@ a {
         margin-top: 10px;
         font-size: 18px;
     }
+    
+    .modal .modal-content {
+        overflow: auto;
+        font-size: 20px;
+    }
+
 
     .footer .footer-content {
         color: rgba(255, 255, 255, .9);
@@ -423,11 +467,11 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(92, 75, 81, .9);
+    box-shadow: inset 0 0 0 1000px rgba(160, 128, 140, 0.9);
 }
 
 .project4:hover {
-    box-shadow: inset 0 0 0 1000px rgba(92, 75, 81, .85);
+    box-shadow: inset 0 0 0 1000px rgba(160, 128, 140, .85);
 }
 
 /*PROJECT STYLE END*/
@@ -445,15 +489,6 @@ a {
 
 .footer .footer-content a:hover {
     color: rgba(240, 96, 96, 1);
-}
-
-.footer #email {
-    background-color: #29384C;
-    border: none;
-    display: inline-block;
-    height: 1px;
-    overflow: hidden;
-    
 }
 
 /*FOOTER STYLE END*/
