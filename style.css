@@ -96,6 +96,10 @@ textarea {
         color: rgba(255, 255, 255, .9);
         ;
     }
+
+    .hero-body {
+        margin-top: -20px;
+    }
     
     .main-banner .title {
         color: rgba(255, 255, 255, .9);
@@ -115,10 +119,11 @@ textarea {
 
     #WIP {
         font-size: 15px;
-        line-height: 75px;
+        line-height: 50px;
     }
     
     .main-banner .explore {
+        margin-top: -30px;
         margin-bottom: 10px;
     }
     
