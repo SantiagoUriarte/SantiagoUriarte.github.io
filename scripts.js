@@ -7,16 +7,6 @@ function copyEmail() {
     alert("email copied to clipboard");
 }
 
-function activateModal(element_id) {
-    var modal_id = element_id + "modal"
-    document.getElementById(modal_id).classList.add("is-active")
-}
-
-function closeModal(element) {
-    modal_id = element.parentElement.id;
-    document.getElementById(modal_id).classList.remove("is-active")
-}
-
 $(document).ready(function () {
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {

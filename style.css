@@ -1,501 +1,140 @@
-/*HELPER STYLE START*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Nanum+Gothic+Coding|Noto+Sans|Questrial');
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-html, body {
+/* GLOBAL STYLES */
+html {
     overflow-x: hidden;
-  }
-  body {
-    position: relative
-  }
-
-a {
-    text-decoration: none;
 }
-
-textarea {
-   display: none;
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
-
-.highlight {
-    text-align: center;
-    padding: 4px 6px;
-    background: rgba(255, 255, 255, .9);
-    color: rgba(41, 56, 76, 1);
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }
-
-.show-border {
-    border: 2px solid red;
-    z-index: 2;
-}
-
-.is-vertical-centered {
+.is-vcentered {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-#WIP {
-    color: rgba(240, 96, 96, .9);
-    font-size: 15px;
+/* HOME PAGE STYLES */
+#home-page {
+    padding: 0;
+    margin: 0;
 }
 
-#WIP .highlight {
-    background: rgba(240, 96, 96, .9);
-    color: white;
+#home-page .columns {
+   margin: 0;
 }
 
-.more-details {
-    color: rgb(51, 61, 67);
-}
-
-.project:hover {
-    color: white;
-}
-
-.modal-content {
-    color: rgba(255, 255, 255, 0.8)
-}
-
-.modal-content .title {
-    color: rgba(240, 96, 96, .9);
-}
-/*HELPER STYLE END*/
-
-/*MAIN BANNER STYLE START*/
-
-/*Phone*/
-@media only screen and (max-width : 767px) {
-    /* Styles */
-    .main-banner {
-        background-image: url("https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-        background-position: center;
-        background-size: cover;
-        box-shadow: inset 0 0 0 1000px rgba(41, 56, 76, .9);
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    .main-banner .logo {
-        padding: 0 0 0 1%;
-    }
-    
-    .logo:hover a h1 {
-        color: rgba(240, 96, 96, .9);
-    }
-    
-    .logo:hover .highlight {
-        background: rgba(240, 96, 96, .9);
-        color: rgba(255, 255, 255, .9);
-        ;
-    }
-    
-    .main-banner .logo h1 {
-        font-size: 15px;
-        color: rgba(255, 255, 255, .9);
-        ;
-    }
-
-    .hero-body {
-        margin-top: -20px;
-    }
-    
-    .main-banner .title {
-        color: rgba(255, 255, 255, .9);
-        ;
-        border-bottom: 4px solid rgba(255, 255, 255, .9);
-        ;
-        font-size: 37px;
-        padding-bottom: 20px;
-    }
-    
-    .main-banner .subtitle {
-        margin-top: 20px;
-        font-size: 17px;
-        color: rgba(255, 255, 255, .9);   
-        margin-bottom: 30px;
-    }
-
-    #WIP {
-        font-size: 15px;
-        line-height: 50px;
-    }
-    
-    .main-banner .explore {
-        margin-top: -30px;
-        margin-bottom: 10px;
-    }
-    
-    .main-banner .explore .button {
-        border: 3px solid rgba(255, 255, 255, .9);
-        border-radius: 10px;
-        padding: 20px 45px 20px 45px;
-        background: none;
-        font-size: 20px;
-        color: rgba(255, 255, 255, .9);
-        ;
-    }
-    
-    .main-banner .explore .button:hover {
-        border-color: rgba(240, 96, 96, 1);
-        color: rgba(240, 96, 96, 1);
-    }
-
-    .project {
-        padding: 100px 50px 100px 50px;
-    }
-
-    .project .title {
-        color: rgba(255, 255, 255, .9);
-        width: 90%;
-        padding-bottom: 15px;
-        border-bottom: 4px solid rgba(255, 255, 255, .9);
-        ;
-        font-size: 25px;
-    }
-    
-    .project .subtitle {
-        color: rgba(255, 255, 255, .9);
-        margin-top: 10px;
-        font-size: 10px;
-    }
-
-    .modal .modal-content {
-        overflow: auto;
-        font-size: 10px;
-    }
-
-    .modal .modal-content .title {
-        font-size: 15px;
-    }
-
-    .footer .footer-content {
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 30px;
-    }
-
-    .footer .title {
-        margin-top: 10px;
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 15px;
-        font-weight: 200;
-    }
-    
-    .footer .subtitle {
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 11px;
-    }
-}
-
-/*Tablet*/
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-    /* Styles */
-    .main-banner {
-        background-image: url("https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-        background-position: center;
-        background-size: cover;
-        box-shadow: inset 0 0 0 1000px rgba(41, 56, 76, .9);
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    .main-banner .logo {
-        padding: 0 0 0 1%;
-    }
-    
-    .logo:hover a h1 {
-        color: rgba(240, 96, 96, .9);
-    }
-    
-    .logo:hover .highlight {
-        background: rgba(240, 96, 96, .9);
-        color: rgba(255, 255, 255, .9);
-        ;
-    }
-    
-    .main-banner .logo h1 {
-        font-size: 15px;
-        color: rgba(255, 255, 255, .9);
-        ;
-    }
-
-    .main-banner .hero-body {
-        margin-top: -150px;
-    }
-    
-    .main-banner .title {
-        color: rgba(255, 255, 255, .9);
-        ;
-        border-bottom: 4px solid rgba(255, 255, 255, .9);
-        ;
-        font-size: 60px;
-        padding-bottom: 20px;
-    }
-    
-    .main-banner .subtitle {
-        margin-top: 20px;
-        font-size: 30px;
-        color: rgba(255, 255, 255, .9); 
-    }
-    
-    .main-banner .explore {
-        margin-bottom: 30px;
-    }
-    
-    .main-banner .explore .button {
-        border: 3px solid rgba(255, 255, 255, .9);
-        border-radius: 10px;
-        padding: 23px 47px 22px 47px;
-        background: none;
-        font-size: 25px;
-        color: rgba(255, 255, 255, .9);
-        ;
-    }
-    
-    .main-banner .explore .button:hover {
-        border-color: rgba(240, 96, 96, 1);
-        color: rgba(240, 96, 96, 1);
-    }
-
-    .project {
-        padding: 100px 50px 100px 50px;
-    }
-
-    .project .title {
-        color: rgba(255, 255, 255, .9);
-        width: 90%;
-        padding-bottom: 15px;
-        border-bottom: 4px solid rgba(255, 255, 255, .9);
-        ;
-        font-size: 25px;
-    }
-
-    
-    .project .subtitle {
-        color: rgba(255, 255, 255, .9);
-        ;
-        margin-top: 10px;
-        font-size: 15px;
-    }
-    
-    .modal .modal-content {
-        overflow: auto;
-        font-size: 17px;
-    }
-
-    .modal .modal-content .title {
-        font-size: 25px;
-    }
-
-
-    .footer .footer-content {
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 30px;
-    }
-
-    .footer .title {
-        margin-top: 10px;
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 15px;
-        font-weight: 200;
-    }
-    
-    .footer .subtitle {
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 11px;
-    }
-}
-
-/*Laptops and Desktops*/
-@media only screen and (min-width : 1025px) {
-    /* Styles */
-    .main-banner {
-        background-image: url("https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-        background-position: center;
-        background-size: cover;
-        box-shadow: inset 0 0 0 1000px rgba(41, 56, 76, .9);
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    .main-banner .logo {
-        padding: 0 0 0 1%;
-    }
-    
-    .logo:hover a h1 {
-        color: rgba(240, 96, 96, .9);
-    }
-    
-    .logo:hover .highlight {
-        background: rgba(240, 96, 96, .9);
-        color: rgba(255, 255, 255, .9);
-        ;
-    }
-    
-    .main-banner .logo h1 {
-        font-size: 15px;
-        color: rgba(255, 255, 255, .9);
-        
-    }
-
-    .main-banner .title {
-        color: rgba(255, 255, 255, .9);
-        ;
-        border-bottom: 4px solid rgba(255, 255, 255, .9);
-        ;
-        font-size: 75px;
-        padding-bottom: 20px;
-    }
-    
-    .main-banner .subtitle {
-        margin-top: 20px;
-        font-size: 40px;
-        color: rgba(255, 255, 255, .9);
-        
-    }
-    
-    .main-banner .explore {
-        margin-bottom: 30px;
-    }
-    
-    .main-banner .explore .button {
-        border: 3px solid rgba(255, 255, 255, .9);
-        border-radius: 10px;
-        padding: 25px 50px 25px 50px;
-        background: none;
-        font-size: 30px;
-        color: rgba(255, 255, 255, .9);
-        ;
-    }
-    
-    .main-banner .explore .button:hover {
-        border-color: rgba(240, 96, 96, 1);
-        color: rgba(240, 96, 96, 1);
-    }
-
-    .project {
-        padding: 200px 100px 200px 100px;
-    }
-
-    .project .title {
-        color: rgba(255, 255, 255, .9);
-        width: 90%;
-        padding-bottom: 15px;
-        border-bottom: 4px solid rgba(255, 255, 255, .9);
-        ;
-        font-size: 45px;
-    }
-    
-    .project .subtitle {
-        color: rgba(255, 255, 255, .9);
-        ;
-        margin-top: 10px;
-        font-size: 18px;
-    }
-    
-    .modal .modal-content {
-        overflow: auto;
-        font-size: 20px;
-    }
-
-
-    .footer .footer-content {
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 40px;
-    }
-
-    .footer .title {
-        margin-top: 10px;
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 20px;
-        font-weight: 200;
-    }
-    
-    .footer .subtitle {
-        color: rgba(255, 255, 255, .9);
-        ;
-        font-size: 11px;
-    }
-}
-
-
-/*MAIN BANNER STYLE END*/
-
-/*PROJECT STYLE START*/
-
-.project1 {
-    background-image: url("https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+/* LEFT SIDE STYLES */
+#left-side-home {
+    background-image: url("https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(240, 96, 96, .9);
+    box-shadow: inset 0 0 0 1000px rgba(33, 49, 63, .9);
+    height: 100vh;
 }
 
-.project1:hover {
-    box-shadow: inset 0 0 0 1000px rgba(240, 96, 96, .85);
+#left-side-home .title {
+    color: rgba(216, 212, 210, 1);
+    font-size: 50px;
 }
 
-.project2 {
-    background-image: url("https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(243, 181, 98, .9);
+#left-side-home .subtitle {
+    font-size: 20px;
+    color: rgba(216, 212, 210, 1);
+    margin: auto;
+    padding-top: 10px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    font-family: 'Questrial', sans-serif;
+    border-top: 1px solid;
+    width: 300px;
+    border-color: #D8726B;
 }
 
-.project2:hover {
-    box-shadow: inset 0 0 0 1000px rgba(243, 181, 98, .85);
-
+#left-side-home #media-buttons {
+    width: 200px;
+    font-size: 25px;
+    margin: auto;
+    
 }
 
-.project3 {
-    background-image: url("https://images.pexels.com/photos/746421/pexels-photo-746421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(140, 190, 178, .9);
+#left-side-home #media-buttons a {
+    color: rgba(216, 212, 210, 1);
+}
+#left-side-home #media-buttons a:hover {
+    color: #D8726B;
 }
 
-.project3:hover {
-    box-shadow: inset 0 0 0 1000px rgba(140, 190, 178, .85);
+
+/* RIGHT SIDE STYLES */
+#right-side-home {
+   height: 100vh;
 }
 
-.project4 {
-    background-image: url("https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(160, 128, 140, 0.9);
+#right-side-home #right-side-content {
+    width: 50%;
+    margin: auto;
 }
 
-.project4:hover {
-    box-shadow: inset 0 0 0 1000px rgba(160, 128, 140, .85);
+#right-side-home #right-side-content #about-me p {
+    font-family: 'Questrial', sans-serif;
 }
 
-/*PROJECT STYLE END*/
-
-/*FOOTER STYLE START*/
-
-.footer {
-    background: #29384C;
-    padding: 25px 0 25px 0;
+#right-side-home .title {
+    color: rgba(33, 49, 63, 1);
+    font-size: 50px;
 }
 
-.footer .footer-content a {
-    margin-left: 25px;
+#right-side-home #horizontal-line {
+    border-top: 2px solid;
+    border-color: #D8726B;
+    margin: -10px auto 10px auto;
+    width: 200px;
 }
 
-.footer .footer-content a:hover {
-    color: rgba(240, 96, 96, 1);
+#right-side-home .button {
+    margin-top: 15px;
+    border-color: rgba(33, 49, 63, 1);
+    color: rgba(33, 49, 63, 1);
+    font-family: 'Questrial', sans-serif;
 }
 
-/*FOOTER STYLE END*/
+#right-side-home .button:hover {
+    border-color: rgba(33, 49, 63, 1);
+    background: rgba(33, 49, 63, 1);
+    color: rgba(216, 212, 210, 1);
+}
+
+
+
+/* Project page styles */
+
+#project-page {
+    height: 100vh;
+    width: 100vw;
+}
+
+#project-page .title {
+    font-size: 65px;
+}
+
+#project-page .horizontal-line {
+    border-bottom: 2px solid;
+    border-color: #D8726B;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#project-page .project-section {
+    width: 60vw;
+    margin: auto;
+}
