@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
 @import url('https://fonts.googleapis.com/css?family=Catamaran|Nanum+Gothic+Coding|Noto+Sans|Questrial');
 
 /* GLOBAL STYLES */
@@ -41,9 +39,11 @@ html {
     height: 100vh;
 }
 
-#particles-js .title {
+#particles-js .name {
     color: rgba(216, 212, 210, 1);
     font-size: 50px;
+    margin-bottom: 12px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 #particles-js .subtitle {
@@ -52,7 +52,7 @@ html {
     margin: auto;
     padding-top: 10px;
     margin-top: -10px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-family: 'Questrial', sans-serif;
     border-top: 1px solid;
     width: 300px;
@@ -88,9 +88,11 @@ html {
     font-family: 'Questrial', sans-serif;
 }
 
-#right-side-home .title {
+#right-side-home .right-side-title {
     color: rgba(33, 49, 63, 1);
     font-size: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 12px;
 }
 
 #right-side-home #horizontal-line {
@@ -122,8 +124,12 @@ html {
     width: 100vw;
 }
 
-#project-page>.title {
+#project-page .project-title {
+    color: rgba(33, 49, 63, 1);
     font-size: 65px;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 12px;
+
 }
 
 #project-page .horizontal-line {
