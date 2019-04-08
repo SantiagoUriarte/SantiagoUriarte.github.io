@@ -122,7 +122,7 @@ html {
     width: 100vw;
 }
 
-#project-page .title {
+#project-page>.title {
     font-size: 65px;
 }
 
