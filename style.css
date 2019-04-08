@@ -32,7 +32,7 @@ html {
 }
 
 /* LEFT SIDE STYLES */
-#left-side-home {
+#particles-js {
     background-image: url("https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-repeat: no-repeat;
     background-position: center;
@@ -41,12 +41,12 @@ html {
     height: 100vh;
 }
 
-#left-side-home .title {
+#particles-js .title {
     color: rgba(216, 212, 210, 1);
     font-size: 50px;
 }
 
-#left-side-home .subtitle {
+#particles-js .subtitle {
     font-size: 20px;
     color: rgba(216, 212, 210, 1);
     margin: auto;
@@ -59,17 +59,17 @@ html {
     border-color: #D8726B;
 }
 
-#left-side-home #media-buttons {
+#particles-js #media-buttons {
     width: 200px;
     font-size: 25px;
     margin: auto;
     
 }
 
-#left-side-home #media-buttons a {
+#particles-js #media-buttons a {
     color: rgba(216, 212, 210, 1);
 }
-#left-side-home #media-buttons a:hover {
+#particles-js #media-buttons a:hover {
     color: #D8726B;
 }
 
@@ -137,4 +137,9 @@ html {
 #project-page .project-section {
     width: 60vw;
     margin: auto;
+}
+
+/* Canvas Styles */
+canvas {
+    position: absolute;
 }
