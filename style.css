@@ -122,7 +122,14 @@ html {
     color: rgba(216, 212, 210, 1);
 }
 
-
+/* Page-sep styles */
+#page-sep {
+    border-top: 2px solid;
+    border-color: rgba(33, 49, 63, .3);
+    width: 20%;
+    margin: auto;   
+    margin-top: 50px;
+}
 
 /* Project page styles */
 
@@ -136,8 +143,18 @@ html {
     font-size: 65px;
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 12px;
-
 }
+
+@media only screen and (max-width: 768px) {
+    #project-page .project-title {
+        color: rgba(33, 49, 63, 1);
+        font-size: 65px;
+        font-family: 'Noto Sans', sans-serif;
+        margin-bottom: 12px;
+        margin-top: 25vh;
+    
+    }
+  }
 
 #project-page .horizontal-line {
     border-bottom: 2px solid;
