@@ -152,6 +152,14 @@ html {
     margin: auto;
 }
 
+#project-page .card .media-content .subtitle {
+    color: #D8726B;
+}
+
+#project-page  .card .content {
+    text-align: left;
+}
+
 /* Canvas Styles */
 canvas {
     position: absolute;
