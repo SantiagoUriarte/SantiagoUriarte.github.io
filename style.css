@@ -9,6 +9,7 @@ html {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
 }
+
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
@@ -17,6 +18,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.under-construction {
+    margin-top: 20%;
+    color: red;
 }
 
 /* HOME PAGE STYLES */
@@ -31,24 +37,20 @@ html {
 
 /* LEFT SIDE STYLES */
 #particles-js {
-    background-image: url("https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(33, 49, 63, .9);
+    background-color: #232931;
     height: 100vh;
 }
 
 #particles-js .name {
     color: rgba(216, 212, 210, 1);
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 12px;
     font-family: 'Noto Sans', sans-serif;
 }
 
 #particles-js .subtitle {
     font-size: 20px;
-    color: rgba(216, 212, 210, 1);
+    color:  rgb(216, 212, 210);
     margin: auto;
     padding-top: 10px;
     margin-top: -10px;
@@ -56,7 +58,7 @@ html {
     font-family: 'Questrial', sans-serif;
     border-top: 1px solid;
     width: 300px;
-    border-color: #D8726B;
+    border-color: #ff6768;
 }
 
 #particles-js #media-buttons {
@@ -66,12 +68,17 @@ html {
 }
 
 #particles-js #media-buttons a {
-    color: rgba(216, 212, 210, 1);
+    color: #ff6768;
     position: relative;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 #particles-js #media-buttons a:hover {
-    color: #D8726B;
+    color: white;
+    box-shadow: 0px 1px 0px 0px #ff6768;
+    transform: translateY(-7px);
 }
+
 
 
 /* RIGHT SIDE STYLES */
@@ -90,92 +97,25 @@ html {
 }
 
 #right-side-home #right-side-content #about-me p {
-    color: rgba(33, 49, 63, .6);
+    color: #393e46;
     font-family: 'Questrial', sans-serif;
     text-align: left;
 }
 
 #right-side-home .right-side-title {
-    color: rgba(33, 49, 63, 1);
-    font-size: 50px;
+    color: #393e46;
+    font-size: 40px;
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 12px;
 }
 
 #right-side-home #horizontal-line {
     border-top: 2px solid;
-    border-color: #D8726B;
+    border-color: #ff6768;
     margin: -10px auto 15px auto;
     width: 200px;
 }
 
-#right-side-home .button {
-    margin-top: 15px;
-    border-color: rgba(33, 49, 63, .5);
-    color: rgba(33, 49, 63, .5);
-    font-family: 'Questrial', sans-serif;
-}
-
-#right-side-home .button:hover {
-    border-color: rgba(33, 49, 63, 1);
-    background: rgba(33, 49, 63, 1);
-    color: rgba(216, 212, 210, 1);
-}
-
-/* Page-sep styles */
-#page-sep {
-    border-top: 2px solid;
-    border-color: rgba(33, 49, 63, .3);
-    width: 20%;
-    margin: auto;   
-    margin-top: 50px;
-}
-
-/* Project page styles */
-
-#project-page {
-    height: 100vh;
-    width: 100vw;
-}
-
-#project-page .project-title {
-    color: rgba(33, 49, 63, 1);
-    font-size: 65px;
-    font-family: 'Noto Sans', sans-serif;
-    margin-bottom: 12px;
-}
-
-@media only screen and (max-width: 768px) {
-    #project-page .project-title {
-        color: rgba(33, 49, 63, 1);
-        font-size: 65px;
-        font-family: 'Noto Sans', sans-serif;
-        margin-bottom: 12px;
-        margin-top: 25vh;
-    
-    }
-  }
-
-#project-page .horizontal-line {
-    border-bottom: 2px solid;
-    border-color: #D8726B;
-    width: 250px;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-#project-page .project-section {
-    width: 75vw;
-    margin: auto;
-}
-
-#project-page .card .media-content .subtitle {
-    color: #D8726B;
-}
-
-#project-page  .card .content {
-    text-align: left;
-}
 
 /* Canvas Styles */
 canvas {
